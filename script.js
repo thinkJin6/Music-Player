@@ -20,7 +20,7 @@ const songs = ['hey', 'summer', 'ukulele'];
 let songIndex = 2;
 
 // Volume Storage
-let volumeStorage = 0.2;
+let volumeStorage = 0.4;
 
 // Toggle volume button switch
 let isMute = false;
@@ -126,7 +126,7 @@ const unMuteVolume = function () {
 // Initially load song detail to DOM
 const init = function () {
   loadSong(songs[songIndex]);
-  audio.volume = 0.2;
+  audio.volume = volumeStorage;
   displayVolumeSize(audio.volume);
 };
 
